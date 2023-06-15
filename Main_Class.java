@@ -4,28 +4,31 @@ public class Main_Class {
 	private static long time;
 	public static void main(String[] args) {
 		Random r=new Random();
-		start();
-//		int n=31;
-
-//		int [] arr= new int [n];
-//		for (int i=0;i<n;i++)
-//		{
-//			arr[i]=r.nextInt(1000);
+//		start();
+		int n=1000000;
+		int [] arr= new int [n];
+		for (int i=0;i<n;i++)
+		{
+			arr[i]=r.nextInt(100);
 //			System.out.print(arr[i]+",");
-//		}
-//		System.out.println();
+		}
+		arr[0]=1;
+		System.out.println();
+
 //		System.out.println("\n"+max_of_n.calc(arr,n));
 //		print_n.calc(n);
 //		System.out.println(distinct_or_not.calc(arr, n));
-		matrix a=new matrix(2,8,2);
-		matrix b=new matrix(8,2,5);
-		System.out.println(a+"\n");
-		System.out.println(b+"\n");
-		matrix.calc(a, b);
+//		matrix a=new matrix(2,8,2);
+//		matrix b=new matrix(8,2,5);
+//		System.out.println(a+"\n");
+//		System.out.println(b+"\n");
+//		matrix.calc(a, b);
+
+		linear_search.calc(arr, n);
+		linear_search.calc(arr, n);
 		
 		
-		
-		stop();
+//		stop();
 	}
 	public static void start()
 	{
