@@ -5,7 +5,7 @@ public class Main_Class {
 	public static void main(String[] args) {
 		Random r=new Random();
 //		start();
-		int n=1000000;
+		int n=15;
 		int [] arr= new int [n];
 		for (int i=0;i<n;i++)
 		{
@@ -23,9 +23,14 @@ public class Main_Class {
 //		System.out.println(a+"\n");
 //		System.out.println(b+"\n");
 //		matrix.calc(a, b);
-
-		linear_search.calc(arr, n);
-		linear_search.calc(arr, n);
+//
+//		arr=linear_search.calc(arr, n);
+//		arr=BubbleSort.calc(arr, n);
+//		
+		arr=SelSort.calc(arr, n);
+		
+		for(int i=0;i<n;i++)
+			System.out.print(arr[i]+"\t");
 		
 		
 //		stop();
