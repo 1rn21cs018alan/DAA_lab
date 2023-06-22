@@ -27,12 +27,12 @@ public class Main_Class {
 //		arr=linear_search.calc(arr, n);
 //		arr=BubbleSort.calc(arr, n);
 //		
-		arr=SelSort.calc(arr, n);
+//		arr=SelSort.calc(arr, n);
+//		
+//		for(int i=0;i<n;i++)
+//			System.out.print(arr[i]+"\t");
 		
-		for(int i=0;i<n;i++)
-			System.out.print(arr[i]+"\t");
-		
-		
+		System.out.println(StrMatch.calc("something", "in"));
 //		stop();
 	}
 	public static void start()
