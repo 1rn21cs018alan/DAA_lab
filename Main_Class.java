@@ -5,16 +5,49 @@ public class Main_Class {
 	public static void main(String[] args) {
 		Random r=new Random();
 //		start();
-		int n=15;
+		int n=30000;
 		int [] arr= new int [n];
-		for (int i=0;i<n;i++)
+		for(int count=0;count<20;count++)
 		{
-			arr[i]=r.nextInt(100);
-//			System.out.print(arr[i]+",");
+			switch(2)
+			{
+			case 0:
+				//best case
+				for (int i=0;i<n;i++)
+				{
+					arr[i]=i;
+	//				System.out.print(arr[i]+",");
+				}
+				break;
+				
+			case 1:
+				//worst case
+				for (int i=0;i<n;i++)
+				{
+					arr[i]=n-i;
+	//				System.out.print(arr[i]+",");
+				}
+				break;
+			case 2://best case = average case
+				//average case
+				for (int i=0;i<n;i++)
+				{
+					arr[i]=r.nextInt(n);
+	//				System.out.print(arr[i]+",");
+				}
+			}
+//			arr=SelSort.calc(arr, n);
+//			MergeSort.calc(arr, n);
+			arr=QuickSort.calc(arr, n);
 		}
-		arr[0]=1;
-		System.out.println();
-
+//
+//		for (int i=0;i<n;i++)
+//		{
+//			System.out.print(arr[i]+",");
+//		}
+//		arr[0]=1;
+//		System.out.println();
+//		
 //		System.out.println("\n"+max_of_n.calc(arr,n));
 //		print_n.calc(n);
 //		System.out.println(distinct_or_not.calc(arr, n));
@@ -27,12 +60,9 @@ public class Main_Class {
 //		arr=linear_search.calc(arr, n);
 //		arr=BubbleSort.calc(arr, n);
 //		
-//		arr=SelSort.calc(arr, n);
-//		
 //		for(int i=0;i<n;i++)
 //			System.out.print(arr[i]+"\t");
-		
-		System.out.println(StrMatch.calc("something", "in"));
+//		System.out.println(StrMatch.calc("something", "in"));
 //		stop();
 	}
 	public static void start()
@@ -41,6 +71,6 @@ public class Main_Class {
 	}
 	public static void stop()
 	{
-		System.out.println("\nTime elapsed="+(System.nanoTime()-time)+"ns");
+		System.out.println("\nTime elapsed="+(System.nanoTime()-time)+" ns");
 	}
 }
