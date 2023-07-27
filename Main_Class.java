@@ -5,42 +5,46 @@ public class Main_Class {
 	public static void main(String[] args) {
 		Random r=new Random();
 //		start();
-		int n=30000;
-		int [] arr= new int [n];
-		for(int count=0;count<20;count++)
-		{
-			switch(2)
-			{
-			case 0:
-				//best case
-				for (int i=0;i<n;i++)
-				{
-					arr[i]=i;
-	//				System.out.print(arr[i]+",");
-				}
-				break;
-				
-			case 1:
-				//worst case
-				for (int i=0;i<n;i++)
-				{
-					arr[i]=n-i;
-	//				System.out.print(arr[i]+",");
-				}
-				break;
-			case 2://best case = average case
-				//average case
-				for (int i=0;i<n;i++)
-				{
-					arr[i]=r.nextInt(n);
-	//				System.out.print(arr[i]+",");
-				}
-			}
-//			arr=SelSort.calc(arr, n);
-//			MergeSort.calc(arr, n);
-			arr=QuickSort.calc(arr, n);
-		}
-//
+//		int n=30000;
+//		start();
+//		TOH.calc(n, "A", "B", "C");
+//		stop();
+//		int [] arr= new int [n];
+//		for(int count=0;count<20;count++)
+//		{
+//			switch(2)
+//			{
+//			case 0:
+//				//best case
+//				for (int i=0;i<n;i++)
+//				{
+//					arr[i]=i;
+//	//				System.out.print(arr[i]+",");
+//				}
+//				break;
+//				
+//			case 1:
+//				//worst case
+//				for (int i=0;i<n;i++)
+//				{
+//					arr[i]=n-i;
+//	//				System.out.print(arr[i]+",");
+//				}
+//				break;
+//			case 2://best case = average case
+//				//average case
+//				for (int i=0;i<n;i++)
+//				{
+//					arr[i]=r.nextInt(n);
+//	//				System.out.print(arr[i]+",");
+//				}
+//			}
+////			arr=SelSort.calc(arr, n);
+////			MergeSort.calc(arr, n);
+////			arr=QuickSort.calc(arr, n);
+//			InsertionSort.calc(arr, n);
+//		}
+
 //		for (int i=0;i<n;i++)
 //		{
 //			System.out.print(arr[i]+",");
@@ -64,6 +68,12 @@ public class Main_Class {
 //			System.out.print(arr[i]+"\t");
 //		System.out.println(StrMatch.calc("something", "in"));
 //		stop();
+		Prims.calc2(new int[][] {
+			{0,1 ,2 ,5},
+			{1,0 ,99,2},
+			{2,99,0 ,3},
+			{5,2 ,3 ,0}
+		});
 	}
 	public static void start()
 	{
